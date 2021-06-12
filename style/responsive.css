@@ -1,0 +1,16 @@
+@media screen and (max-width: 1046px) {
+    header.container{
+        display: flex;
+        flex-direction: column; /* põe os itens em coluna */
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 230px;
+    }
+    .titulo{
+        font-weight: normal;
+        font-style: normal;
+        font-size: medium;
+    }
+}

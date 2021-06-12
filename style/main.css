@@ -1,0 +1,116 @@
+/* Comentários sobre o INDEX */
+/* digitando div.nomedaclasse o editor cria a estrutura */
+/* alt+shift+setaparabaixo clona a linha atual */
+/* classe container/raper são das div que criamos para encaixar tudo dentro e poder apertar e ver um codigo mais resumido  */
+/* css = folha de estilo em cascata */
+:root {
+    /* Para declarar uma variável dentro do css coloca dentro da raiz/root e -- antes do nome da variável */
+    --vermelho: #E50914; 
+    --preto: #141414;
+}
+
+/* Elementos base */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* O limite dos elementos internos se adequem ao tamanho das bordas externas */
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header.container{
+    /* o display flex faz os itens se alinharem horizontalmente. */
+    display: flex; 
+    flex-direction: row;
+    align-items: center; /* alinha os itens no centro. */
+    justify-content: space-between; /* posiciona os itens na tela. */
+}
+
+header .logo{
+    color: red ;
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{ /* :hover permite alterar a cor quando o mouse passar por cima. */
+    color: #fff;
+}
+
+/* Filme principal */
+
+.filme-principal{
+    font-size: 14px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("/imgs/sweet-tooth.jpg");
+    height: auto;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* põe os itens no meio da columa */
+    align-items: start; /* Para que os elementos se alinhem a esquerda */
+}
+
+.filme-principal .descricao{
+    margin-bottom: 70px;
+    margin-top: 10px;
+}
+
+.filme-principal .titulo{
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 18%;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50); /* vermelho verde azul (camada alfa)transparência */
+    border: none;
+    color: whitesmoke;
+    padding: 12px 28px; /* cima baixo esquerda direita (ordem das bordas) */
+    margin-right: 15px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1.5s;
+    border-radius: 6%;
+}
+
+.botao:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.botao i{
+    margin-right: 3px;
+}
+
+.container {
+    margin-left: 3%;
+    margin-right: 1%;
+}
+
+.filme-principal .container{
+    width: 40%;
+}
+
+.box-filme{
+    height: 80%;
+    width: 80%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrossel-filmes {
+    margin-top: 5px;
+}
